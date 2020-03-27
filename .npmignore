@@ -1,0 +1,9 @@
+.vscode
+node_modules
+.gitignore
+package-lock.json
+yarn.lock
+/**/.DS_Store
+.idea/
+test.*
+test
