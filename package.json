@@ -4,7 +4,8 @@
   "description": "将一个es6项目转成es5项目构造器",
   "main": "index.js",
   "scripts": {
-    "compile": "./bin/index.js compile"
+    "compile": "./bin/index.js compile",
+    "pub": "npm publish --access=public"
   },
   "bin": {
     "build-tool": "bin/index.js"
