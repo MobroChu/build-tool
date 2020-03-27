@@ -37,7 +37,6 @@ module.exports = program => {
         })
       );
     }
-    console.log(modules, 'heiheihei')
     return stream.pipe(gulp.dest(modules === false ? esDir : libDir));
   }
 
@@ -49,7 +48,6 @@ module.exports = program => {
     const source = ["src/**/*.js"];
     const result = gulp.src(source);
     const filesStream = babelify(result, modules);
-    console.log(filesStream, 'jjjj')
     return merge2([filesStream, assets]);
   }
   

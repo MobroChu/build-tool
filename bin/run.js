@@ -14,7 +14,6 @@ program
 
 // https://github.com/tj/commander.js/pull/260
 const proc = program.runningCommand;
-console.log(proc, 'uuu')
 if (proc) {
   proc.on('close', process.exit.bind(process));
   proc.on('error', () => {
