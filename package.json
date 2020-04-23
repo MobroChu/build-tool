@@ -1,6 +1,6 @@
 {
   "name": "@mobro/build-tool",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "将一个es6项目转成es5项目构造器",
   "main": "index.js",
   "scripts": {
