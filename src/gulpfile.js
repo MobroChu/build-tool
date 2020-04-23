@@ -6,6 +6,7 @@ module.exports = program => {
   const stripCode = require("gulp-strip-code");
   const merge2 = require("merge2");
   const babel = require("gulp-babel");
+  const chalk = require('chalk');	// 粉笔
 
   const cwd = process.cwd();
   const libDir = path.join(cwd, "lib");
@@ -53,6 +54,11 @@ module.exports = program => {
   
   gulp.task("compile", ["compile-with-es"], () => {
     compile();
+console.log(
+`${chalk.yellow(`打包完成了~~`)}
+${chalk.magenta(`嗯，就是完成了`)}
+在根目录下分别生成了${chalk.green(`【es】`)}和${chalk.green(`【lib】`)}文件夹哈，瞅瞅吧~`
+)
   });
 
   gulp.task("compile-with-es", () => {
